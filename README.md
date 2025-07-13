@@ -1,122 +1,108 @@
 # HTML
 <br>
-🌐 HTML Basics Cheat Sheet
-📘 Introduction to HTML
-HTML (HyperText Markup Language) is the standard language used to create webpages. It structures content using elements (tags), which define the meaning and structure of the text.
+Basic HTML Interview Questions
+What is HTML?
 
-HTML documents start with <!DOCTYPE html>
+HTML (HyperText Markup Language) is the standard language for creating web pages and web applications.
 
-The root element is <html>, and it contains:
+What are tags in HTML?
 
-<head>: Metadata, title, links to CSS, etc.
+Tags are the building blocks of HTML used to mark up content. Example: <p>, <a>, <div>.
 
-<body>: Visible content of the webpage
+What is the difference between HTML and HTML5?
 
+HTML5 supports multimedia elements (<audio>, <video>), new semantic tags (<article>, <section>), and is more mobile-friendly.
 
+What is the structure of a basic HTML document?
+
+html
+Copy
+Edit
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Page</title>
+    <title>Title</title>
   </head>
   <body>
-    <h1>Hello World</h1>
-    <p>This is a basic HTML page.</p>
+    Content goes here.
   </body>
 </html>
-🧭 Headings
-HTML provides six levels of headings:
+What is the purpose of the <!DOCTYPE html> declaration?
 
+It defines the HTML version and ensures the browser renders the page correctly.
 
-<h1>Main Heading</h1>
-<h2>Subheading</h2>
-<h3>Sub-subheading</h3>
-...
-<h6>Smallest heading</h6>
-<h1> is the most important, and <h6> is the least.
+What is the difference between <div> and <span>?
 
-Headings help with SEO and document structure.
+<div> is a block-level element; <span> is an inline element.
 
-📊 Tables
-Tables are used to display data in rows and columns.
+What are void elements in HTML?
 
+Elements that do not have a closing tag. Example: <br>, <img>, <input>
 
-<table border="1">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>24</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>30</td>
-    </tr>
-  </tbody>
-</table>
-Key tags:
+📋 Intermediate HTML Interview Questions
+What is the difference between id and class attributes?
 
-<table>: Wraps the whole table
+id is unique for an element; class can be shared among multiple elements.
 
-<tr>: Table row
+What are semantic tags in HTML5?
 
-<th>: Table header
+Tags that convey the meaning of the content, e.g., <header>, <footer>, <article>, <main>
 
-<td>: Table data cell
+What is the use of the <meta> tag?
 
-📋 Forms
-HTML forms are used to collect user input.
+Provides metadata like character set, author, viewport settings for responsive design.
 
+How does the <form> element work in HTML?
 
-<form action="/submit" method="post">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="username" required>
+It collects user input and sends it to a server using action and method attributes.
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email">
+How can you embed an image in a webpage?
 
-  <input type="submit" value="Submit">
-</form>
-Common input types:
+html
+Copy
+Edit
+<img src="image.jpg" alt="Description" width="200" height="100">
+What is the use of the alt attribute in <img>?
 
-text, email, password, radio, checkbox, submit
+It provides alternative text if the image fails to load and is important for accessibility.
 
-🧩 Semantic HTML
-Semantic tags clearly describe their meaning in a human- and machine-readable way.
+Difference between <script> and <noscript> tags?
 
+<script> runs JavaScript; <noscript> is shown if JS is disabled.
 
-<header>Site Header</header>
-<nav>Navigation Links</nav>
-<main>Main Content</main>
-<article>Blog Post</article>
-<section>Section of Content</section>
-<aside>Sidebar</aside>
-<footer>Footer Content</footer>
-Benefits:
+What is the purpose of the target="_blank" attribute in <a> tag?
 
-Better SEO
+Opens the linked document in a new tab.
 
-Improved accessibility
+💡 Advanced HTML Interview Questions
+How do you make a website mobile-responsive in HTML?
 
-Easier maintenance
+Using <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-🎥 Media in HTML
-🔊 Audio
+What are custom data attributes in HTML5?
 
+Attributes starting with data-, e.g., data-user-id="123", used to store extra data.
+
+What is the difference between <section> and <article>?
+
+<article> is self-contained content (like a blog post), while <section> groups related content.
+
+How do you embed audio and video in HTML?
+
+html
+Copy
+Edit
 <audio controls>
-  <source src="audio.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
+  <source src="sound.mp3" type="audio/mpeg">
 </audio>
-📺 Video
 
-<video width="320" height="240" controls>
+<video controls width="300">
   <source src="movie.mp4" type="video/mp4">
-  Your browser does not support the video tag.
 </video>
-🖼️ Images
+Can you explain the difference between localStorage, sessionStorage, and cookies in the context of HTML5?
 
-<img src="image.jpg" alt="Description of image" width="300">
+localStorage: Stores data with no expiration.
+
+sessionStorage: Clears data when the page session ends.
+
+Cookies: Stored on the server/client with expiry and sent with each request.
